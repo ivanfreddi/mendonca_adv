@@ -1,5 +1,13 @@
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <HeroSection />
+    </>
+  );
 }
 
 export default App;
