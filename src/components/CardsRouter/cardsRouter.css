@@ -1,0 +1,60 @@
+.aside {
+  background-color: #632636;
+  min-height: 520px;
+  height: 100%;
+}
+
+.aside .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.cards-router {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  background-color: #948b80;
+  width: 320px;
+  height: 450px;
+  padding: 20px 10px 0 10px;
+}
+
+.cards-router img {
+  width: 120px;
+  height: 120px;
+}
+
+.cards-router h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.cards-router p {
+  color: #dedad2;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #632636;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.card-btn:hover {
+  background-color: #dedad2;
+  color: #948b80;
+}

@@ -8,6 +8,8 @@ body {
   scroll-behavior: smooth;
   font-family: "Roboto";
   overflow-x: hidden;
+  font-size: 1rem;
+  cursor: default;
 }
 
 .container {
