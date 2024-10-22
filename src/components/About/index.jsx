@@ -1,15 +1,9 @@
-import bannerAbout from "../../assets/banner_about.jpg";
 import about from "../../assets/about.jpg";
 import "./about.css";
 
 const About = () => {
   return (
     <section id="about">
-      <img
-        className="about-banner"
-        src={bannerAbout}
-        alt="A imagem mostra uma prateleira de livros em uma biblioteca"
-      />
       <div className="container">
         <h2>
           <strong>
