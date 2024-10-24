@@ -1,0 +1,101 @@
+.footer {
+  background-color: #632636;
+  height: 420px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+.footer-content {
+  margin-top: 4rem;
+  display: flex;
+  gap: 5rem;
+  text-align: start;
+  justify-content: center;
+}
+
+.brand,
+.social-network,
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  width: 38%;
+}
+
+.brand h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0 0 3rem;
+}
+
+.brand img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.social-network {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.social-network h4 {
+  color: #dedad2;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.social-network a {
+  color: #948b80;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.social-network span {
+  font-size: 1rem;
+  color: #948b80;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.social-network span:hover {
+  color: #dedad2;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+}
+
+.footer-nav a {
+  color: #dedad2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.footer-nav a:hover {
+  color: #948b80;
+}
+
+.footer-bottom p,
+span {
+  color: #dedad2;
+  font-weight: 100;
+  font-size: 12px;
+}
