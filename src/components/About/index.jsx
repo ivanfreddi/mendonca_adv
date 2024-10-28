@@ -34,7 +34,7 @@ const About = () => {
                 satisfeitos em todo o Brasil.
               </p>
             </div>
-            <a className="about-btn" href="#">
+            <a className="about-btn" href="#contact">
               Fale Conosco
             </a>
           </div>

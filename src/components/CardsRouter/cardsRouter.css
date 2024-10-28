@@ -1,7 +1,6 @@
 .aside {
   background-color: #632636;
-  min-height: 520px;
-  height: 100%;
+  height: 32.5rem;
 }
 
 .aside .container {
@@ -18,14 +17,14 @@
   gap: 1rem;
   position: relative;
   background-color: #948b80;
-  width: 320px;
-  height: 450px;
-  padding: 20px 10px 0 10px;
+  width: 20rem;
+  height: 28.12rem;
+  padding: 1.25rem 0.62rem 0 0.62rem;
 }
 
 .cards-router img {
-  width: 120px;
-  height: 120px;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .cards-router h3 {
@@ -43,8 +42,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 40px;
+  width: 8.75rem;
+  height: 2.5rem;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #632636;
@@ -57,4 +56,36 @@
 .card-btn:hover {
   background-color: #dedad2;
   color: #632636;
+}
+
+@media (max-width: 900px) {
+  .aside {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .aside .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .cards-router {
+    width: 60%;
+    height: 23.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-router {
+    width: 70%;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 554px) {
+  .cards-router {
+    width: 90%;
+    height: 28.12rem;
+  }
 }

@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="brand">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Logomarca do escritório Mendonça advocacia." />
             <h4>
               Com quase uma década de experiência na área previdenciária,
               oferecemos um atendimento personalizado e especializado para cada
@@ -22,36 +22,30 @@ const Footer = () => {
 
           <div className="social-network">
             <h4>Contatos</h4>
-            <a href="">
+            <a href="https://wa.me/5551980582577?text=Ol%C3%A1" target="_blank">
               <LuPhoneCall /> <span>(51) 98058-2577</span>
             </a>
-            <a href="">
+            <a href="https://wa.me/5551980582577?text=Ol%C3%A1" target="_blank">
               <FaWhatsapp /> <span>(51) 98058-2577</span>
             </a>
-            <a href="">
-              <LuMail /> <span>contato@mendocadv.com.br</span>
+            <a href="mailto:contato@mendoncadv.com.br">
+              <LuMail /> <span>contato@mendoncadv.com.br</span>
             </a>
           </div>
 
           <nav className="footer-nav">
             <ul>
               <li>
-                <a href="">Início</a>
+                <a href="#">Início</a>
               </li>
               <li>
-                <a href="">Sobre</a>
+                <a href="#">Auxílio-Doença</a>
               </li>
               <li>
-                <a href="">Serviços</a>
+                <a href="#">Auxílio Acidente</a>
               </li>
               <li>
-                <a href="">Auxílio-Doença</a>
-              </li>
-              <li>
-                <a href="">Auxílio Acidente</a>
-              </li>
-              <li>
-                <a href="">BPC Loas</a>
+                <a href="#">BPC Loas</a>
               </li>
             </ul>
           </nav>

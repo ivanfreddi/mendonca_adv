@@ -1,6 +1,7 @@
 .footer {
   background-color: #632636;
-  height: 420px;
+  min-height: 26.25rem;
+  height: 100%;
 }
 
 .footer .container {
@@ -41,7 +42,7 @@
 
 .brand img {
   width: 100%;
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 
 .social-network {
@@ -52,7 +53,7 @@
 
 .social-network h4 {
   color: #dedad2;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -97,5 +98,72 @@
 span {
   color: #dedad2;
   font-weight: 100;
-  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 870px) {
+  .footer {
+    padding-bottom: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    margin-top: 2.2rem;
+  }
+
+  .brand,
+  .social-network,
+  .footer-nav {
+    width: 100%;
+    align-items: center;
+  }
+
+  .brand h4 {
+    padding: 0;
+    width: 70%;
+  }
+
+  .social-network::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #948b80;
+  }
+
+  .social-network::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #948b80;
+    margin-top: 1rem;
+  }
+
+  .footer-nav::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #948b80;
+    margin-top: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .container {
+    gap: 2.6rem;
+  }
+  .brand h4 {
+    width: 90%;
+  }
+
+  .footer-bottom p,
+  span {
+    font-size: 0.6rem;
+  }
 }

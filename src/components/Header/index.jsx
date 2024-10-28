@@ -49,7 +49,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <nav className={`navbar-header ${menuOpen ? "open" : ""}`}>
-          <a href="#hero" className="logotype" onClick={closeMenu}>
+          <a href="#" className="logotype" onClick={closeMenu}>
             <img
               src={logo}
               alt="Logomarca do escritório Mendonça advocacia. "
@@ -57,7 +57,7 @@ const Header = () => {
           </a>
           <ul className={`header-ul ${menuOpen ? "open" : ""}`}>
             <li>
-              <a href="#hero" className="nav-link" onClick={closeMenu}>
+              <a href="#" className="nav-link" onClick={closeMenu}>
                 Início
               </a>
             </li>

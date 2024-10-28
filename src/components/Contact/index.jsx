@@ -12,26 +12,27 @@ const Contact = () => {
     {
       icon: <LuPhoneCall />,
       name: "Telefone",
-      link: "#",
+      link: "https://wa.me/5551980582577?text=Ol%C3%A1",
       address: "(51) 98058-2577",
     },
     {
       icon: <FaWhatsapp />,
       name: "WhatsApp",
-      link: "#",
+      link: "https://wa.me/5551980582577?text=Ol%C3%A1",
       address: "(51) 98058-2577",
     },
     {
       icon: <LuMail />,
       name: "E-mail",
-      link: "#",
-      address: "contato@mendocadv.com.br",
+      link: "mailto:contato@mendoncadv.com.br",
+      address: "contato@mendoncadv.com.br",
     },
     {
       icon: <MdOutlinePlace />,
       name: "Endereço físico (Somente com agendamento)",
-      link: "#",
-      address: "Rua tal e tal 123 - Centro - Porto Alegre/RS",
+      link: "https://maps.app.goo.gl/ijQmEF57agbiRQ1KA",
+      address:
+        "Rua dos Andradas, 1560, Sala 905, Galeria Malcon - Centro - Porto Alegre/RS",
     },
   ];
 
@@ -126,7 +127,7 @@ const Contact = () => {
                 <a href={contact.link} className="icon">
                   {contact.icon}
                 </a>
-                <a href={contact.link} className="info">
+                <a href={contact.link} target="_blank" className="info">
                   {contact.name} <span>{contact.address}</span>
                 </a>
               </div>
