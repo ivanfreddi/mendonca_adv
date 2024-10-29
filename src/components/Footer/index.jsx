@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import ScrollToTopLink from "../../ScrollToTop";
 import logo from "../../assets/logo.png";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
@@ -36,16 +38,22 @@ const Footer = () => {
           <nav className="footer-nav">
             <ul>
               <li>
-                <a href="#">Início</a>
+                <Link to="/">
+                  <ScrollToTopLink to="/">Início</ScrollToTopLink>
+                </Link>
               </li>
               <li>
-                <a href="#">Auxílio-Doença</a>
+                <ScrollToTopLink to="/Auxilio-Doenca">
+                  Auxílio-Doença
+                </ScrollToTopLink>
               </li>
               <li>
-                <a href="#">Auxílio Acidente</a>
+                <ScrollToTopLink to="/Auxilio-Acidente">
+                  Auxílio Acidente
+                </ScrollToTopLink>
               </li>
               <li>
-                <a href="#">BPC Loas</a>
+                <ScrollToTopLink to="/BPC-Loas">BPC Loas</ScrollToTopLink>
               </li>
             </ul>
           </nav>

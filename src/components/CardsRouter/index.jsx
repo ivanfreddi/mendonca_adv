@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import doenca from "../../assets/doenca.png";
 import acidente from "../../assets/acidente.png";
 import bpc from "../../assets/bpc.png";
@@ -11,7 +12,7 @@ const cards = [
     title: "AUXÍLIO-DOENÇA",
     description:
       "Também chamado de Benefício por Incapacidade Temporária, é o benefício pago pelo INSS para quem está temporariamente incapacitado para trabalhar por causa de doença ou acidente. Funciona como uma licença médica remunerada, que garante uma renda enquanto você se recupera.",
-    path: "#",
+    path: "/Auxilio-Doenca",
   },
   {
     icon: acidente,
@@ -19,7 +20,7 @@ const cards = [
     title: "AUXÍLIO ACIDENTE",
     description:
       "É o benefício pago pelo INSS para quem sofreu um acidente de trabalho, desenvolveu uma doença ocupacional ou acidente de qualquer natureza (ex: acidente de trânsito) e, por isso, ficou com alguma sequela que o impede de realizar algumas atividades. Este benefício funciona como uma indenização por dano sofridos.",
-    path: "#",
+    path: "/Auxilio-Acidente",
   },
   {
     icon: bpc,
@@ -27,7 +28,7 @@ const cards = [
     title: "BPC LOAS",
     description:
       "O Benefício de Prestação Continuada é um benefício assistencial para pessoas de baixa renda. Ele se divide em IDOSO, para maiores de 65 anos, e DEFICIÊNCIA, para quem tem impedimento de longo prazo, sem condições de trabalho, não importa a idade.",
-    path: "#",
+    path: "/BPC-Loas",
   },
 ];
 
@@ -42,9 +43,9 @@ const CardsRouter = () => {
               <strong>{card.title}</strong>
             </h3>
             <p>{card.description}</p>
-            <a className="card-btn" href={card.path}>
+            <Link className="card-btn" to={card.path}>
               Saiba Mais
-            </a>
+            </Link>
           </div>
         ))}
       </div>

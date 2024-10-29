@@ -19,7 +19,8 @@
   display: flex;
   align-items: center;
   z-index: 1;
-  max-width: 100%;
+  max-width: 20.5rem;
+  width: 100%;
 }
 
 .header-ul {
@@ -64,8 +65,10 @@
 
 .dropdown-arrow {
   position: absolute;
-  margin-top: 6px;
+  margin-top: 1px;
   padding-left: 3px;
+  font-size: 1.2rem;
+  color: #948b80;
 }
 
 .submenu {
@@ -107,7 +110,7 @@
 .submenu a:hover {
   color: #632636;
 }
-@media (max-width: 920px) {
+@media (max-width: 950px) {
   .header .container {
     display: flex;
     justify-content: space-between;
@@ -115,8 +118,8 @@
   }
 
   .logotype,
-  img {
-    width: 15.62rem;
+  .logotype img {
+    width: 16rem;
   }
 
   .header-ul {
@@ -137,6 +140,11 @@
 }
 
 @media (max-width: 798px) {
+  .logotype,
+  .logotype img {
+    width: 22rem;
+  }
+
   .header-ul {
     left: -100%;
     position: fixed;
@@ -220,11 +228,18 @@
   }
 
   .submenu {
-    height: 18.12rem;
+    height: 8.12rem;
     gap: 0.5rem;
   }
 
   .submenu a {
     padding: 0.1rem 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .logotype,
+  .logotype img {
+    width: 16rem;
   }
 }

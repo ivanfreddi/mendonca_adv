@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ScrollToTopLink from "../../ScrollToTop";
 import { RiArrowDownSLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
 import "./header.css";
@@ -83,19 +85,31 @@ const Header = () => {
                 </span>
                 <ul className={`submenu ${dropdownOpen ? "open" : ""}`}>
                   <li>
-                    <a href="/" className="nav-link" onClick={closeMenu}>
+                    <Link
+                      to="/Auxilio-Doenca"
+                      className="nav-link"
+                      onClick={closeMenu}
+                    >
                       Auxílio-Doença
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/" className="nav-link" onClick={closeMenu}>
+                    <Link
+                      to="/Auxilio-Acidente"
+                      className="nav-link"
+                      onClick={closeMenu}
+                    >
                       Auxílio Acidente
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/" className="nav-link" onClick={closeMenu}>
+                    <Link
+                      to="/BPC-Loas"
+                      className="nav-link"
+                      onClick={closeMenu}
+                    >
                       BPC Loas
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </span>

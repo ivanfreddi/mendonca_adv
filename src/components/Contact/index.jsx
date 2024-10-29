@@ -31,8 +31,7 @@ const Contact = () => {
       icon: <MdOutlinePlace />,
       name: "Endereço físico (Somente com agendamento)",
       link: "https://maps.app.goo.gl/ijQmEF57agbiRQ1KA",
-      address:
-        "Rua dos Andradas, 1560, Sala 905, Galeria Malcon - Centro - Porto Alegre/RS",
+      address: "Rua dos Andradas, 1560, Sala 905 - Centro - Porto Alegre/RS",
     },
   ];
 
@@ -127,7 +126,11 @@ const Contact = () => {
                 <a href={contact.link} className="icon">
                   {contact.icon}
                 </a>
-                <a href={contact.link} target="_blank" className="info">
+                <a
+                  href={contact.link}
+                  className="info"
+                  {...(contact.name !== "E-mail" && { target: "_blank" })}
+                >
                   {contact.name} <span>{contact.address}</span>
                 </a>
               </div>
