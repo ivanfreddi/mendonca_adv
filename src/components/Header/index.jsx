@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ScrollToTopLink from "../../ScrollToTop";
 import { useState, useEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
@@ -50,7 +50,11 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <nav className={`navbar-header ${menuOpen ? "open" : ""}`}>
-          <a href="#" className="logotype" onClick={closeMenu}>
+          <a
+            href="https://mendoca-adv.vercel.app/"
+            className="logotype"
+            onClick={closeMenu}
+          >
             <img
               src={logo}
               alt="Logomarca do escritório Mendonça advocacia. "
@@ -58,7 +62,11 @@ const Header = () => {
           </a>
           <ul className={`header-ul ${menuOpen ? "open" : ""}`}>
             <li>
-              <a href="#" className="nav-link" onClick={closeMenu}>
+              <a
+                href="https://mendoca-adv.vercel.app/"
+                className="nav-link"
+                onClick={closeMenu}
+              >
                 Início
               </a>
             </li>
@@ -84,31 +92,22 @@ const Header = () => {
                 </span>
                 <ul className={`submenu ${dropdownOpen ? "open" : ""}`}>
                   <li>
-                    <Link
-                      to="/Auxilio-Doenca"
-                      className="nav-link"
-                      onClick={closeMenu}
-                    >
+                    <ScrollToTopLink to="/Auxilio-Doenca" className="nav-link">
                       Auxílio-Doença
-                    </Link>
+                    </ScrollToTopLink>
                   </li>
                   <li>
-                    <Link
+                    <ScrollToTopLink
                       to="/Auxilio-Acidente"
                       className="nav-link"
-                      onClick={closeMenu}
                     >
                       Auxílio Acidente
-                    </Link>
+                    </ScrollToTopLink>
                   </li>
                   <li>
-                    <Link
-                      to="/BPC-Loas"
-                      className="nav-link"
-                      onClick={closeMenu}
-                    >
+                    <ScrollToTopLink to="/BPC-Loas" className="nav-link">
                       BPC Loas
-                    </Link>
+                    </ScrollToTopLink>
                   </li>
                 </ul>
               </span>

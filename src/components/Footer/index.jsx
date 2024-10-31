@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ScrollToTopLink from "../../ScrollToTop";
 import logo from "../../assets/logo.png";
 import { LuPhoneCall } from "react-icons/lu";

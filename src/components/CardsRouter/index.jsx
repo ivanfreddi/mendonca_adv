@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ScrollToTopLink from "../../ScrollToTop";
 import doenca from "../../assets/doenca.png";
 import acidente from "../../assets/acidente.png";
 import bpc from "../../assets/bpc.png";
@@ -43,9 +43,9 @@ const CardsRouter = () => {
               <strong>{card.title}</strong>
             </h3>
             <p>{card.description}</p>
-            <Link className="card-btn" to={card.path}>
+            <ScrollToTopLink className="card-btn" to={card.path}>
               Saiba Mais
-            </Link>
+            </ScrollToTopLink>
           </div>
         ))}
       </div>
