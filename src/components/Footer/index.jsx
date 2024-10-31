@@ -38,9 +38,7 @@ const Footer = () => {
           <nav className="footer-nav">
             <ul>
               <li>
-                <Link to="/">
-                  <ScrollToTopLink to="/">Início</ScrollToTopLink>
-                </Link>
+                <ScrollToTopLink to="/">Início</ScrollToTopLink>
               </li>
               <li>
                 <ScrollToTopLink to="/Auxilio-Doenca">

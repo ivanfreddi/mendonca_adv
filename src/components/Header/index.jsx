@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import ScrollToTopLink from "../../ScrollToTop";
 import { RiArrowDownSLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
 import "./header.css";
