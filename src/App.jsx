@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Auxilio-Doenca" element={<Doenca />} />

@@ -1,6 +1,6 @@
 .aside {
   background-color: #632636;
-  height: 32.5rem;
+  min-height: 32.5rem;
 }
 
 .aside .container {
@@ -18,22 +18,21 @@
   position: relative;
   background-color: #948b80;
   width: 20rem;
-  height: 28.12rem;
+  min-height: 28.12rem;
   padding: 1.25rem 0.62rem 0 0.62rem;
+  border-radius: 0.8rem;
 }
 
-.cards-router img {
-  width: 7.5rem;
-  height: 7.5rem;
-}
-
-.cards-router h3 {
+.cards-router h2 {
   color: #ffffff;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .cards-router p {
-  color: #dedad2;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .card-btn {
@@ -50,7 +49,7 @@
   border-radius: 2rem;
   font-size: 1rem;
   font-weight: 700;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .card-btn:hover {

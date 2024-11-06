@@ -1,4 +1,4 @@
-import HeaderPages from "../../HeaderPages";
+import HeaderPages from "../../components/HeaderPages";
 import Specialized from "../../components/Specialized";
 import Contact from "../../components/Contact";
 
@@ -23,31 +23,29 @@ const Acidente = () => {
     },
     {
       question:
-        "Como é calculado o valor do Auxílio Acidente e quais fatores influenciam esse cálculo?",
+        "Como saber quanto irei receber de auxílio acidente? Qual o cálculo?",
       answer:
         "O valor do Auxílio Acidente é calculado com base em 50% do salário de benefício, que é determinado pelas contribuições feitas ao INSS. Fatores como o tempo de contribuição e a média dos salários de contribuição influenciam esse cálculo.",
     },
     {
       question:
-        "Quais tipos de acidentes podem gerar o direito ao Auxílio Acidente, e como é feita a comprovação das sequelas?",
+        "Quais tipos de acidentes dão direito ao benefício? Como comprovo as sequelas?",
       answer:
         "O Auxílio Acidente pode ser concedido em casos de acidentes de trabalho, de trânsito ou domésticos que resultem em sequelas. A comprovação das sequelas é feita por meio de laudos médicos que atestem a relação entre o acidente e as limitações que afetam a capacidade laboral.",
     },
     {
-      question:
-        "Qual é a duração do Auxílio Acidente e o que determina o seu término?",
+      question: "Até quando posso receber o auxílio acidente? ",
       answer:
         "O Auxílio Acidente é pago enquanto as sequelas que limitam a capacidade de trabalho persistirem. O benefício termina quando o segurado recupera sua capacidade de trabalho ou atinge a idade de aposentadoria.",
     },
     {
       question:
-        "Quais documentos são necessários para solicitar o Auxílio Acidente no INSS?",
+        "Quais documentos preciso ter para solicitar o auxílio acidente?",
       answer:
         "Para solicitar o Auxílio Acidente, o trabalhador deve apresentar laudos médicos, boletins de ocorrência (nos casos de acidentes de trânsito), além de documentos pessoais como RG, CPF e comprovante de residência.",
     },
     {
-      question:
-        "É possível acumular o Auxílio Acidente com outros benefícios da Previdência, e quais seriam as exceções?",
+      question: " Recebo auxílio acidente. Posso receber outros benefícios?",
       answer:
         "Sim, o Auxílio Acidente pode ser acumulado com outros benefícios da Previdência, exceto com a aposentadoria. Isso permite que o trabalhador receba suporte financeiro adicional enquanto se recupera das sequelas.",
     },

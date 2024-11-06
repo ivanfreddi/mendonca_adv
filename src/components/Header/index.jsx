@@ -2,6 +2,7 @@ import ScrollToTopLink from "../../ScrollToTop";
 import { useState, useEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
+import logoWebp from "../../assets/logo.webp";
 import "./header.css";
 
 const Header = () => {
@@ -49,18 +50,31 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <nav className={`navbar-header ${menuOpen ? "open" : ""}`}>
+        <nav
+          className={`navbar-header ${menuOpen ? "open" : ""}`}
+          aria-label="Navegação principal"
+        >
           <a
             href="https://mendoca-adv.vercel.app/"
             className="logotype"
             onClick={closeMenu}
+            aria-label="ir para página inicial"
           >
-            <img
-              src={logo}
-              alt="Logomarca do escritório Mendonça advocacia. "
-            />
+            <picture>
+              <source srcSet={logoWebp} type="image/web" />
+              <img
+                src={logo}
+                alt="Mendonça Advocacia"
+                width="227"
+                height="80"
+              />
+            </picture>
           </a>
-          <ul className={`header-ul ${menuOpen ? "open" : ""}`}>
+          <ul
+            className={`header-ul ${menuOpen ? "open" : ""}`}
+            aria-label="Links do menu principal"
+            id="main-nav"
+          >
             <li>
               <a
                 href="https://mendoca-adv.vercel.app/"
@@ -84,13 +98,23 @@ const Header = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               onClick={toggleDropdown}
+              aria-haspopup="true"
+              aria-expanded={dropdownOpen}
+              aria-controls="submenu"
             >
-              <span className={`nav-link ${dropdownOpen ? "open" : ""}`}>
+              <span
+                className={`nav-link ${dropdownOpen ? "open" : ""}`}
+                tabIndex={0}
+              >
                 Consultorias Especializadas
                 <span className="dropdown-arrow">
                   <RiArrowDownSLine />
                 </span>
-                <ul className={`submenu ${dropdownOpen ? "open" : ""}`}>
+                <ul
+                  id="submenu"
+                  className={`submenu ${dropdownOpen ? "open" : ""}`}
+                  aria-label="Links do submenu consultorias especializadas"
+                >
                   <li>
                     <ScrollToTopLink to="/Auxilio-Doenca" className="nav-link">
                       Auxílio-Doença
@@ -119,12 +143,15 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div
+        <button
           className={`menu-btn ${menuOpen ? "open" : ""}`}
           onClick={handleMenuClick}
+          aria-label="Menu principal"
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
         >
           <div className="menu-btn_burger"></div>
-        </div>
+        </button>
       </div>
     </header>
   );

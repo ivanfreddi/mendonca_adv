@@ -13,11 +13,12 @@
   gap: 3rem;
 }
 
-#contact .container h2 {
+#contact-title {
   color: #632636;
   font-size: 2.3rem;
   font-weight: 700;
   padding-top: 3rem;
+  text-align: center;
 }
 
 .contact-content {
@@ -38,6 +39,7 @@
   color: #000000;
   font-weight: 400;
   padding-left: 4px;
+  font-size: 1rem;
 }
 
 .input {
@@ -61,11 +63,10 @@
   width: 100%;
   height: 6.87rem;
   padding: 1rem 1rem;
-  resize: vertical;
-  z-index: 1;
+  resize: none;
 }
 
-.from-btn {
+.form-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,12 +77,28 @@
   color: #632636;
   font-weight: 900;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
-.from-btn:hover {
+.form-btn:hover {
   background-color: #632636;
   color: #dedad2;
+}
+
+.submit-status {
+  padding: 0.6rem;
+  margin: 0.2rem 0 2rem 0;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  max-width: 20rem;
+}
+
+.submit-status.success {
+  background-color: #948b80;
+}
+
+.submit-status.error {
+  background-color: #632636;
 }
 
 .contact-right {
@@ -107,16 +124,19 @@
   display: flex;
   gap: 0.2rem;
   flex-direction: column;
-}
-
-.contacts .info {
   color: #666564;
   font-weight: 700;
+  transition: 0.5s ease;
+}
+
+.contacts .info:hover {
+  color: #632636;
 }
 
 .contacts .info span {
   color: #632636;
   font-weight: 700;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 768px) {

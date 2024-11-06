@@ -18,9 +18,9 @@ article .container {
 .article-text h2,
 .faq h2 {
   margin: 4rem 0;
-  font-weight: 700;
-  font-size: 2rem;
   color: #632636;
+  font-size: 2.3rem;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@ article .container {
   background-color: #632636;
 }
 
-.faq-question span {
+.faq-question button {
   display: flex;
   align-items: center;
   justify-content: center;

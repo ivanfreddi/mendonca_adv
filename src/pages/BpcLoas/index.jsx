@@ -1,4 +1,4 @@
-import HeaderPages from "../../HeaderPages";
+import HeaderPages from "../../components/HeaderPages";
 import Specialized from "../../components/Specialized";
 import Contact from "../../components/Contact";
 
@@ -16,33 +16,32 @@ const BpcLoas = () => {
 
   const faq = [
     {
-      question: "Quem tem direito ao BPC LOAS?",
+      question: "Quem pode receber BPC LOAS?",
       answer:
         "O BPC LOAS é destinado a pessoas idosas com 65 anos ou mais e a pessoas com deficiência que comprovem a impossibilidade de prover a própria manutenção",
     },
     {
-      question: "Qual é o valor do BPC LOAS?",
+      question: "Qual o valor do BPC LOAS e até quando posso receber?",
       answer: "O valor do benefício é equivalente a um salário mínimo mensal.",
     },
     {
-      question:
-        "É necessário ter contribuído para a Previdência Social para receber o BPC LOAS?",
+      question: "Preciso contribuir para solicitar BPC LOAS?",
       answer:
         "Não, o BPC LOAS é um benefício assistencial e não exige contribuições prévias à Previdência Social",
     },
     {
-      question: "Como solicitar o BPC LOAS?",
+      question: "Qual o critério renda familiar para ter o BPC LOAS concedido?",
       answer:
         "A solicitação deve ser feita junto ao INSS, onde será realizada uma análise da situação socioeconômica da família",
     },
     {
-      question:
-        "Qual é a renda familiar per capita permitida para a concessão do BPC LOAS?",
+      question: "Recebo BPC LOAS. Posso receber outros benefícios?",
       answer:
         "A renda familiar per capita deve ser inferior a 1/4 do salário mínimo para que o beneficiário tenha direito ao BPC LOAS",
     },
     {
-      question: "O BPC LOAS é vitalício?",
+      question:
+        "Moro com alguém que recebe BPC LOAS. Posso receber BPC LOAS também?",
       answer:
         "O benefício pode ser revisto periodicamente, e o beneficiário deve manter a condição de vulnerabilidade para continuar recebendo o BPC.",
     },

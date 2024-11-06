@@ -1,5 +1,6 @@
 #services {
-  background-image: url(../../assets/banner_services.jpg);
+  background-image: url(../../assets//banner_services.webp),
+    url(../../assets/banner_services.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,6 +31,7 @@
   color: #dedad2;
   font-weight: 700;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cards {
@@ -41,8 +43,6 @@
 .cards img {
   border-radius: 1rem;
   position: relative;
-  width: 20rem;
-  height: 23.12rem;
 }
 
 .cards-content {
@@ -55,7 +55,7 @@
   height: 23.12rem;
 }
 
-.cards-content h4 {
+.cards-content h3 {
   display: flex;
   align-items: center;
   justify-content: center;

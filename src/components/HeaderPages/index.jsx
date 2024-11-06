@@ -1,7 +1,8 @@
 import { useState } from "react";
-import ScrollToTopLink from "../ScrollToTop";
-import logo from "../assets/logo.png";
-import "../components/Header/header.css";
+import ScrollToTopLink from "../../ScrollToTop";
+import logo from "../../assets/logo.png";
+import logoWebp from "../../assets/logo.webp";
+import "../Header/header.css";
 
 const HeaderPages = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,11 +15,20 @@ const HeaderPages = () => {
     <header className="header">
       <div className="container">
         <nav className={`navbar-header ${menuOpen ? "open" : ""}`}>
-          <a href="https://mendoca-adv.vercel.app/" className="logotype">
-            <img
-              src={logo}
-              alt="Logomarca do escritório Mendonça advocacia. "
-            />
+          <a
+            href="https://mendoca-adv.vercel.app/"
+            className="logotype"
+            aria-label="ir para página inicial"
+          >
+            <picture>
+              <source srcSet={logoWebp} type="image/webp" />
+              <img
+                src={logo}
+                alt="Mendonça Advocacia"
+                width="227"
+                height="80"
+              />
+            </picture>
           </a>
           <ul className={`header-ul ${menuOpen ? "open" : ""}`}>
             <li>

@@ -1,4 +1,4 @@
-import HeaderPages from "../../HeaderPages";
+import HeaderPages from "../../components/HeaderPages";
 import Specialized from "../../components/Specialized";
 import Contact from "../../components/Contact";
 
@@ -23,31 +23,27 @@ const Doenca = () => {
     },
     {
       question:
-        "Como é calculado o valor do Auxílio-Doença e quais fatores influenciam esse cálculo?",
+        "Como saber quanto irei receber de auxílio-doença? Qual o cálculo?",
       answer:
         "O valor do Auxílio-Doença é calculado com base na média dos salários de contribuição do segurado, considerando as 12 últimas contribuições. O benefício corresponde a 91% dessa média, e fatores como o tempo de contribuição e o salário recebido influenciam o cálculo.",
     },
     {
-      question:
-        "Quais tipos de condições de saúde podem dar direito ao Auxílio-Doença, e como é feita a comprovação?",
+      question: "Quais doenças dão direito ao auxílio-doença? Como comprovo?",
       answer:
         "O Auxílio-Doença pode ser concedido para uma variedade de condições de saúde, incluindo doenças físicas e mentais que impeçam o trabalhador de exercer suas atividades. A comprovação é feita por meio de atestados e laudos médicos que detalham a condição e a duração da incapacidade.",
     },
     {
-      question:
-        "Qual é a duração do Auxílio-Doença e o que determina o seu término?",
+      question: "Até quando irei receber meu auxílio-doenca? ",
       answer:
         "O Auxílio-Doença é pago enquanto o segurado estiver incapacitado para o trabalho e, em geral, pode durar até 120 dias. A continuidade do benefício deve ser reavaliada pelo INSS, e o pagamento pode ser interrompido quando o trabalhador recupera a capacidade ou não comparece à perícia médica",
     },
     {
-      question:
-        "Quais documentos são necessários para solicitar o Auxílio-Doença no INSS?",
+      question: "Quais documentos preciso ter para solicitar o auxilio-doenca?",
       answer:
         "Para solicitar o Auxílio-Doença, o trabalhador precisa apresentar um atestado médico que comprove a incapacidade, documentos pessoais como RG e CPF, além de comprovante de residência e, se aplicável, a documentação que comprove o afastamento do trabalho.",
     },
     {
-      question:
-        "É possível acumular o Auxílio-Doença com outros benefícios da Previdência, e quais seriam as exceções?",
+      question: "Recebo auxilio-doenca. Posso receber outros benefícios?",
       answer:
         "O Auxílio-Doença pode ser acumulado com outros benefícios, como pensão por morte ou aposentadoria por invalidez, mas não pode ser recebido ao mesmo tempo que o Auxílio Acidente, pois ambos têm propósitos distintos e não são acumuláveis.",
     },

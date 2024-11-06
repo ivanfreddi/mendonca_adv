@@ -1,8 +1,6 @@
 #hero img {
-  width: 100%;
-  height: 100%;
-  max-height: 43.75rem;
   position: absolute;
+  aspect-ratio: 1919 / 700;
 }
 
 .hero-content {
@@ -16,23 +14,24 @@
   max-width: 38.12rem;
   width: 100%;
   height: 37.5rem;
-  color: #dedad2;
+  color: #ffffffff;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   padding: 0 16%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-h3 {
+.hero-description {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.hero-h3 h3 {
-  font-size: 1.12rem;
-  font-weight: 400;
+.hero-description p {
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-btn {
@@ -48,11 +47,12 @@
   background-color: #dedad2;
   color: #632636;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .hero-btn:hover {
-  background-color: #948b80;
+  background-color: #632636;
+  color: #dedad2;
 }
 
 @media (max-width: 768px) {
@@ -60,12 +60,8 @@
     font-size: 2.4rem;
   }
 
-  .hero-h3 {
+  .hero-description {
     width: 90%;
-  }
-
-  .hero-h3 h3 {
-    font-size: 1rem;
   }
 
   .hero-btn {
@@ -79,7 +75,7 @@
   #hero img {
     max-height: 38.75rem;
   }
-  .hero-h3 {
+  .hero-description {
     width: 95%;
   }
 

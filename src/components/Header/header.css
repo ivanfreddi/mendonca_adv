@@ -16,11 +16,7 @@
 }
 
 .logotype {
-  display: flex;
-  align-items: center;
   z-index: 1;
-  max-width: 20.5rem;
-  width: 100%;
 }
 
 .header-ul {
@@ -38,6 +34,14 @@
   transition: color 0.8s ease;
   font-weight: 600;
   cursor: pointer;
+}
+
+.nav-link:focus-visible {
+  outline: 1px auto;
+}
+
+.submenu .nav-link:focus-visible {
+  outline: 1px auto;
 }
 
 .nav-link::before {
@@ -102,6 +106,12 @@
   transition: color 0.3s ease;
 }
 
+.submenu:focus-within {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
 .submenu a:hover::before {
   width: 20%;
   background-color: #632636;
@@ -110,18 +120,12 @@
 .submenu a:hover {
   color: #632636;
 }
+
+.menu-btn {
+  display: none;
+}
+
 @media (max-width: 950px) {
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logotype,
-  .logotype img {
-    width: 16rem;
-  }
-
   .header-ul {
     gap: 1.6rem;
   }
@@ -140,11 +144,11 @@
 }
 
 @media (max-width: 798px) {
-  .logotype,
-  .logotype img {
-    width: 22rem;
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
   .header-ul {
     left: -100%;
     position: fixed;
@@ -152,6 +156,7 @@
     bottom: 0;
     background-color: #632636;
     width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     transition: left 0.5s ease;
@@ -180,11 +185,14 @@
     width: 5rem;
     height: 5rem;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
     z-index: 1;
+    background-color: transparent;
+    border: none;
   }
 
   .menu-btn_burger {
+    display: flex;
+    align-items: center;
     width: 3.12rem;
     height: 0.37rem;
     background: #dedad2;
@@ -234,12 +242,5 @@
 
   .submenu a {
     padding: 0.1rem 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .logotype,
-  .logotype img {
-    width: 16rem;
   }
 }

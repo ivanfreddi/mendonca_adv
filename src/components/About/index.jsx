@@ -1,20 +1,27 @@
 import about from "../../assets/about.jpg";
+import aboutWebp from "../../assets/about.webp";
 import "./about.css";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" aria-labelledby="about-heading">
       <div className="container">
-        <h2>
+        <h2 id="about-heading">
           <strong>
             Sabe como garantir o seu futuro financeiro para você e sua família?
           </strong>
         </h2>
         <div className="about-content">
-          <img
-            src={about}
-            alt="Duas pessoas em um ambiente de escritório conversando"
-          />
+          <picture>
+            <source srcSet={aboutWebp} type="image/webp" />
+            <img
+              src={about}
+              alt="Duas pessoas em um ambiente corporativo conversando sobre planejamento previdenciário"
+              width="380"
+              height="475"
+              loading="lazy"
+            />
+          </picture>
           <div className="about-right">
             <h3>Conte conosco!</h3>
             <div className="about-text">
@@ -34,7 +41,11 @@ const About = () => {
                 satisfeitos em todo o Brasil.
               </p>
             </div>
-            <a className="about-btn" href="#contact">
+            <a
+              href="#contact"
+              className="about-btn"
+              aria-label="Clique para falar conosco sobre seu benefício previdenciário"
+            >
               Fale Conosco
             </a>
           </div>

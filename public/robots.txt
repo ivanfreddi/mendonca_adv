@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Allow: /Auxilio-Doenca
+Allow: /Auxilio-Acidente
+Allow: /BPC-Loas
+Disallow: /404
+
+# Sitemaps
+Sitemap: https://mendoca-adv.vercel.app/sitemap.xml
