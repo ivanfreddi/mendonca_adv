@@ -15,8 +15,8 @@ const HeaderPages = () => {
     <header className="header">
       <div className="container">
         <nav className={`navbar-header ${menuOpen ? "open" : ""}`}>
-          <a
-            href="mendoncadv.com.br"
+          <ScrollToTopLink
+            to="/"
             className="logotype"
             aria-label="ir para página inicial"
           >
@@ -29,12 +29,12 @@ const HeaderPages = () => {
                 height="60"
               />
             </picture>
-          </a>
+          </ScrollToTopLink>
           <ul className={`header-ul ${menuOpen ? "open" : ""}`}>
             <li>
-              <a href="mendoncadv.com.br" className="nav-link">
+              <ScrollToTopLink to="/" className="nav-link">
                 Início
-              </a>
+              </ScrollToTopLink>
             </li>
             <li>
               <ScrollToTopLink to="/Auxilio-Doenca" className="nav-link">
@@ -43,7 +43,7 @@ const HeaderPages = () => {
             </li>
             <li>
               <ScrollToTopLink to="/Auxilio-Acidente" className="nav-link">
-                Auxílio Acidente
+                Auxílio-Acidente
               </ScrollToTopLink>
             </li>
             <li>

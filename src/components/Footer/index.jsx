@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <ScrollToTopLink to="/Auxilio-Acidente">
-                  Auxílio Acidente
+                  Auxílio-Acidente
                 </ScrollToTopLink>
               </li>
               <li>

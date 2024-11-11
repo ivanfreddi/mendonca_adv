@@ -23,7 +23,7 @@ const cards = [
     iconWebp: acidenteWebp,
     icon: acidente,
     alt: "Imagem de uma pessoa sofrendo um acidente.",
-    title: "AUXÍLIO ACIDENTE",
+    title: "AUXÍLIO-ACIDENTE",
     description:
       "É o benefício pago pelo INSS para quem sofreu um acidente de trabalho, desenvolveu uma doença ocupacional ou acidente de qualquer natureza (ex: acidente de trânsito) e, por isso, ficou com alguma sequela que o impede de realizar algumas atividades. Este benefício funciona como uma indenização por dano sofridos.",
     path: "/Auxilio-Acidente",

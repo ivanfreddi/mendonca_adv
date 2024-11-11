@@ -7,4 +7,4 @@ Allow: /BPC-Loas
 Disallow: /404
 
 # Sitemaps
-Sitemap: https://mendoca-adv.vercel.app/sitemap.xml
+Sitemap: https://mendoncadv.com.br/sitemap.xml

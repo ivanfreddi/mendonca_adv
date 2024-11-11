@@ -54,8 +54,8 @@ const Header = () => {
           className={`navbar-header ${menuOpen ? "open" : ""}`}
           aria-label="Navegação principal"
         >
-          <a
-            href="mendoncadv.com.br"
+          <ScrollToTopLink
+            to="/"
             className="logotype"
             onClick={closeMenu}
             aria-label="ir para página inicial"
@@ -69,20 +69,16 @@ const Header = () => {
                 height="60"
               />
             </picture>
-          </a>
+          </ScrollToTopLink>
           <ul
             className={`header-ul ${menuOpen ? "open" : ""}`}
             aria-label="Links do menu principal"
             id="main-nav"
           >
             <li>
-              <a
-                href="mendoncadv.com.br"
-                className="nav-link"
-                onClick={closeMenu}
-              >
+              <ScrollToTopLink to="/" className="nav-link" onClick={closeMenu}>
                 Início
-              </a>
+              </ScrollToTopLink>
             </li>
             <li>
               <a href="#about" className="nav-link" onClick={closeMenu}>
@@ -125,7 +121,7 @@ const Header = () => {
                       to="/Auxilio-Acidente"
                       className="nav-link"
                     >
-                      Auxílio Acidente
+                      Auxílio-Acidente
                     </ScrollToTopLink>
                   </li>
                   <li>
