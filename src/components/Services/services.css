@@ -1,9 +1,5 @@
 #services {
-  background-image: url(../../assets//banner_services.webp),
-    url(../../assets/banner_services.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #632636;
   width: 100%;
   min-height: 56.25rem;
   height: 100%;
@@ -38,6 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.cards:hover {
+  transform: scale(1.02);
 }
 
 .cards img {
@@ -78,13 +79,6 @@
 @media (max-width: 1023px) {
   #services {
     padding-bottom: 1.6rem;
-  }
-}
-
-@media (max-width: 700px) {
-  #services {
-    background-image: none;
-    background-color: #632636;
   }
 }
 

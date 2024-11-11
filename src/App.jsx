@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./ScrollToTop";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Doenca from "./pages/Doenca";
 import Acidente from "./pages/Acidente";
 import BpcLoas from "./pages/BpcLoas";
+import WhatsappButton from "./components/WhatsappButton";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/Auxilio-Acidente" element={<Acidente />} />
           <Route path="/BPC-Loas" element={<BpcLoas />} />
         </Routes>
+        <WhatsappButton />
         <Footer />
       </Router>
     </>

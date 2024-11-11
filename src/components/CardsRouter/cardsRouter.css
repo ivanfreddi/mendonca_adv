@@ -24,13 +24,13 @@
 }
 
 .cards-router h2 {
-  color: #ffffff;
+  color: #000;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .cards-router p {
-  color: #ffffff;
+  color: #000;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -43,7 +43,7 @@
   align-items: center;
   width: 8.75rem;
   height: 2.5rem;
-  color: #ffffff;
+  color: #dedad2;
   background-color: transparent;
   border: 1px solid #632636;
   border-radius: 2rem;

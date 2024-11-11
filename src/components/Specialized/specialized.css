@@ -8,16 +8,9 @@ article .container {
   flex-wrap: wrap;
 }
 
-.article-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
-}
-
 .article-text h2,
-.faq h2 {
-  margin: 4rem 0;
+.faq h3 {
+  margin: 3rem 0;
   color: #632636;
   font-size: 2.3rem;
   font-weight: 700;
@@ -28,7 +21,7 @@ article .container {
   padding: 0 6%;
   line-height: 1.5rem;
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .faq {
@@ -48,12 +41,15 @@ article .container {
 }
 
 .faq-question {
+  width: 100%;
   padding: 1.6rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: start;
   color: #dedad2;
+  background-color: #632636;
+  border: none;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -63,7 +59,7 @@ article .container {
 }
 
 .faq-question:hover {
-  padding-left: 3rem;
+  padding-left: 2.2rem;
   background-color: #6e2c3e;
 }
 
@@ -72,19 +68,9 @@ article .container {
   background-color: #632636;
 }
 
-.faq-question button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  background-color: #dedad2;
-  border-radius: 0.4rem;
-}
-
 .icon {
   font-size: 1.6rem;
-  color: #632636;
+  color: #dedad2;
   transition: transform 0.3s ease;
 }
 
@@ -112,10 +98,10 @@ article .container {
 @media (max-width: 750px) {
   .faq-question h4 {
     width: 80%;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .faq-question:hover {
-    padding-left: 2rem;
+    padding-left: 1.6rem;
   }
 }

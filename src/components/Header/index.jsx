@@ -55,7 +55,7 @@ const Header = () => {
           aria-label="Navegação principal"
         >
           <a
-            href="https://mendoca-adv.vercel.app/"
+            href="mendoncadv.com.br"
             className="logotype"
             onClick={closeMenu}
             aria-label="ir para página inicial"
@@ -66,7 +66,7 @@ const Header = () => {
                 src={logo}
                 alt="Mendonça Advocacia"
                 width="227"
-                height="80"
+                height="60"
               />
             </picture>
           </a>
@@ -77,7 +77,7 @@ const Header = () => {
           >
             <li>
               <a
-                href="https://mendoca-adv.vercel.app/"
+                href="mendoncadv.com.br"
                 className="nav-link"
                 onClick={closeMenu}
               >

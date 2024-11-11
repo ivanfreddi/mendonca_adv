@@ -16,7 +16,7 @@ const HeaderPages = () => {
       <div className="container">
         <nav className={`navbar-header ${menuOpen ? "open" : ""}`}>
           <a
-            href="https://mendoca-adv.vercel.app/"
+            href="mendoncadv.com.br"
             className="logotype"
             aria-label="ir para página inicial"
           >
@@ -26,13 +26,13 @@ const HeaderPages = () => {
                 src={logo}
                 alt="Mendonça Advocacia"
                 width="227"
-                height="80"
+                height="60"
               />
             </picture>
           </a>
           <ul className={`header-ul ${menuOpen ? "open" : ""}`}>
             <li>
-              <a href="https://mendoca-adv.vercel.app/" className="nav-link">
+              <a href="mendoncadv.com.br" className="nav-link">
                 Início
               </a>
             </li>

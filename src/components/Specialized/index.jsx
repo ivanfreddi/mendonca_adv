@@ -16,15 +16,13 @@ const Specialized = ({ text, faq }) => {
           <h2>
             <strong>{text.title}</strong>
           </h2>
-          <p>{text.description} </p>
-          <p>{text.description1}</p>
-          <p>{text.description2}</p>
+          <p dangerouslySetInnerHTML={{ __html: text.description }} />
         </div>
         <div className="faq">
-          <h2>Perguntas Frequentes</h2>
+          <h3>Perguntas Frequentes</h3>
           {faq.map((faq, index) => (
             <div key={index} className="faq-item">
-              <div
+              <button
                 className={`faq-question ${
                   activeIndex === index ? "no-hover" : ""
                 }`}
@@ -36,18 +34,17 @@ const Specialized = ({ text, faq }) => {
                 <h4>
                   <strong>{faq.question}</strong>
                 </h4>
-                <button>
-                  <FiChevronDown
-                    className={`icon ${activeIndex === index ? "open" : ""}`}
-                  />
-                </button>
-              </div>
+                <FiChevronDown
+                  aria-label={`Abrir resposta para: ${faq.question}`}
+                  className={`icon ${activeIndex === index ? "open" : ""}`}
+                />
+              </button>
               <div
                 className={`faq-answer ${activeIndex === index ? "open" : ""}`}
                 id={`faq-answer-${index}`}
                 aria-labelledby={`faq-question-${index}`}
               >
-                <p>{faq.answer}</p>
+                <p dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
               </div>
             </div>
           ))}
