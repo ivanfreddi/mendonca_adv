@@ -20,7 +20,7 @@ const Footer = () => {
                 src={logo}
                 alt="Logomarca do escritório Mendonça advocacia."
                 width="227"
-                height="60"
+                height="50"
               />
             </picture>
             <p className="brand-description">

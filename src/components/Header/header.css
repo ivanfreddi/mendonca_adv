@@ -126,6 +126,9 @@
 }
 
 @media (max-width: 950px) {
+  .logotype {
+    padding-left: 1rem;
+  }
   .header-ul {
     gap: 1.6rem;
   }
@@ -149,6 +152,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .logotype img {
+    width: 180px;
+    height: 45px;
+  }
+
   .header-ul {
     left: -100%;
     position: fixed;
@@ -242,16 +251,5 @@
 
   .submenu a {
     padding: 0.1rem 0;
-  }
-
-  @media (max-width: 500px) {
-    .logotype {
-      padding-left: 1rem;
-    }
-
-    .logotype img {
-      width: 11.25rem;
-      height: 3.125rem;
-    }
   }
 }

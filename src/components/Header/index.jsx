@@ -66,7 +66,7 @@ const Header = () => {
                 src={logo}
                 alt="Mendonça Advocacia"
                 width="227"
-                height="60"
+                height="50"
               />
             </picture>
           </ScrollToTopLink>
