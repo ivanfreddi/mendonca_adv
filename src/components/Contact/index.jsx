@@ -33,9 +33,7 @@ const Contact = () => {
     {
       icon: <MdOutlinePlace aria-hidden="true" />,
       name: "Endereço físico (Somente com agendamento)",
-      link: "https://maps.app.goo.gl/ijQmEF57agbiRQ1KA",
-      address: "Rua dos Andradas, 1560, Sala 905 - Centro - Porto Alegre/RS",
-      description: "Ver localização no mapa (Somente com agendamento)",
+      description: "localização somente com agendamento",
     },
   ];
 
